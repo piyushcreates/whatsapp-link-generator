@@ -63,8 +63,9 @@ const WhatsAppLinkGenerator = () => {
   };
 
   return (
-    <div className="p-4 sm:p-8 min-h-screen flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-lg shadow-2xl rounded-xl border-t-4 border-green-500">
+    <div className="p-4 sm:p-8 min-h-screen flex flex-col items-center justify-center bg-gray-50">
+      <div className="flex-grow flex items-center justify-center w-full">
+        <Card className="w-full max-w-lg shadow-2xl rounded-xl border-t-4 border-green-500">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-extrabold text-gray-800">
             WhatsApp Link Generator
@@ -136,6 +137,18 @@ const WhatsAppLinkGenerator = () => {
           </Button>
         </CardContent>
       </Card>
+      <footer className="mt-8 pb-4 text-center text-sm text-gray-500">
+        Powered by{" "}
+        <a
+          href="https://socialmasla.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold transition-colors duration-200"
+          style={{ color: "#F03E3E" }}
+        >
+          Social Masla
+        </a>
+      </footer>
     </div>
   );
 };
