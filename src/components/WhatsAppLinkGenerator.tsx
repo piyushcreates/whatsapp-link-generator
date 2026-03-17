@@ -124,23 +124,23 @@ const WhatsAppLinkGenerator = () => {
 
   return (
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent selection:text-white">
-      <div className="container mx-auto px-6 sm:px-10 py-8 sm:py-16 flex flex-col items-center">
-        <div className="w-full max-w-[1340px] space-y-12">
+      <div className="container mx-auto px-6 sm:px-10 py-6 sm:py-8 flex flex-col items-center">
+        <div className="w-full max-w-[1340px] space-y-6 sm:space-y-8">
           {/* Header */}
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
+          <div className="text-center space-y-3 sm:space-y-4 max-w-4xl mx-auto">
             <div className="flex justify-center">
-              <Badge variant="outline" className="px-4 py-1 border-accent/30 text-accent font-bold tracking-widest uppercase text-[0.6rem]">
+              <Badge variant="outline" className="px-3 py-0.5 border-accent/30 text-accent font-bold tracking-widest uppercase text-[0.55rem]">
                 Professional Link Engine
               </Badge>
             </div>
-            <h1 className="font-heading text-4xl sm:text-6xl md:text-[5.5rem] font-extrabold leading-[1.0] tracking-[-0.04em] uppercase">
-              WhatsApp <span className="text-accent underline decoration-accent/20 underline-offset-8">Marketing</span> Link Engine
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-[3.25rem] font-extrabold leading-[1.1] tracking-[-0.03em] uppercase">
+              WhatsApp <span className="text-accent underline decoration-accent/20 underline-offset-4">Marketing</span> Link Engine
             </h1>
-            <p className="text-base sm:text-[1.125rem] leading-[1.7] text-muted max-w-2xl mx-auto px-4">
+            <p className="text-sm sm:text-base leading-relaxed text-muted max-w-2xl mx-auto px-4">
               Create, track, and brand your WhatsApp direct chat links. The ultimate tool for Social Masla marketers.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2 max-w-3xl mx-auto">
               <div className="space-y-1">
                 <p className="text-[0.65rem] font-bold uppercase tracking-widest text-accent">Fast</p>
                 <p className="text-[0.8rem] text-muted leading-tight">Instant link generation</p>
@@ -162,9 +162,9 @@ const WhatsAppLinkGenerator = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr,400px] gap-8 items-start">
             {/* Left Column: Creator */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <Card className="bg-card shadow-lg rounded-[20px] border-none overflow-hidden transition-all duration-300">
-                <CardContent className="space-y-8 p-6 sm:p-10">
+                <CardContent className="space-y-6 p-6 sm:p-8">
                   {/* Phone Input Row */}
                   <div className="space-y-4">
                     <div className="flex items-center space-x-2">
@@ -181,7 +181,7 @@ const WhatsAppLinkGenerator = () => {
                         placeholder="234 567 8900"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
-                        className="h-14 bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-lg px-6 flex-1"
+                        className="h-12 bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-base px-6 flex-1"
                       />
                     </div>
                   </div>
@@ -214,8 +214,8 @@ const WhatsAppLinkGenerator = () => {
                       placeholder="Start typing your message..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      rows={4}
-                      className="bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-lg p-6 resize-none min-h-[150px]"
+                      rows={3}
+                      className="bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-base p-5 resize-none min-h-[120px]"
                     />
                   </div>
 
@@ -253,17 +253,17 @@ const WhatsAppLinkGenerator = () => {
                       onClick={() => handleCopy()}
                       disabled={!generatedLink}
                       variant="outline"
-                      className="h-16 border-accent text-accent font-bold rounded-[8px] hover:bg-accent/5 transition-all text-lg uppercase tracking-widest space-x-3"
+                      className="h-12 border-accent text-accent font-bold rounded-[8px] hover:bg-accent/5 transition-all text-sm uppercase tracking-widest space-x-2"
                     >
-                      <Copy className="h-5 w-5" />
+                      <Copy className="h-4 w-4" />
                       <span>Copy Link</span>
                     </Button>
                     <Button
                       onClick={handleOpen}
                       disabled={!generatedLink}
-                      className="h-16 bg-accent hover:bg-accent-hover text-white font-bold rounded-[8px] shadow-lg transition-all text-lg uppercase tracking-widest space-x-3"
+                      className="h-12 bg-accent hover:bg-accent-hover text-white font-bold rounded-[8px] shadow-lg transition-all text-sm uppercase tracking-widest space-x-2"
                     >
-                      <Send className="h-5 w-5" />
+                      <Send className="h-4 w-4" />
                       <span>Launch Chat</span>
                     </Button>
                   </div>
@@ -273,7 +273,7 @@ const WhatsAppLinkGenerator = () => {
               {/* Recent History Section */}
               {history.length > 0 && (
                 <Card className="bg-card/50 shadow-md rounded-[20px] border-none overflow-hidden">
-                  <CardContent className="p-8">
+                  <CardContent className="p-4 sm:p-6">
                     <div className="flex items-center justify-between mb-4">
                       <RecentLinks history={history} onCopy={handleCopy} />
                       <Button variant="ghost" size="sm" onClick={clearHistory} className="text-muted hover:text-destructive space-x-1">
@@ -287,9 +287,9 @@ const WhatsAppLinkGenerator = () => {
             </div>
 
             {/* Right Column: Preview & Assets */}
-            <div className="space-y-8 sticky top-8">
+            <div className="space-y-6 sticky top-6">
               <Card className="bg-card shadow-lg rounded-[20px] border-none overflow-hidden h-fit">
-                <CardContent className="p-8 space-y-10">
+                <CardContent className="p-6 sm:p-8 space-y-8">
                   <LivePreview message={message} />
                   
                   <div className="pt-6 border-t border-input/50">
@@ -308,7 +308,7 @@ const WhatsAppLinkGenerator = () => {
         </div>
       </div>
 
-      <footer className="bg-black py-10 px-6 mt-20">
+      <footer className="bg-black py-8 px-6 mt-6">
         <div className="container mx-auto flex flex-col items-center justify-center max-w-[1340px] text-center">
           <p className="text-[0.75rem] sm:text-[0.875rem] font-medium tracking-wide">
             <span className="text-white/40">Powered by </span>

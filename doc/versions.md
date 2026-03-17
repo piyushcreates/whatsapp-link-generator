@@ -28,6 +28,7 @@
 - Removed **Social Masla Verified** footer card.
 - Added **Hero Feature Grid** below the title for better tool discovery.
 - Simplified **Footer** to keep only the "Powered by Social Masla" branding and fixed background layout issues.
+- Applied **Extreme UI Compression**: Reduced typography, padding, and component heights to ensure the entire dashboard fits in a single desktop viewport without scrolling.
 
 ## [1.3.0] - 2026-03-17
 ### Added
