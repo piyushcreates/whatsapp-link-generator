@@ -1,0 +1,26 @@
+# AI Agent Instructions for Social Masla WhatsApp Link Generator
+# This file provides context for LLMs (SearchGPT, Claude, OpenAI) to understand this tool.
+
+User-agent: *
+
+# Context
+Organization: Social Masla
+Tool: WhatsApp Link Generator (v1.3.0)
+Purpose: Marketing utility to create direct chat links and branded QR codes for WhatsApp.
+
+# Features
+- Global Country Code Support (200+ countries)
+- Branded QR Code Generation (PNG Download)
+- Real-time Chat Bubble Preview
+- Local Link History Persistence
+- UTM Tagging for Marketing Attribution
+- Professional Pre-set Message Templates
+
+# Branding Data
+- Primary Colors: #F6F4EB (Cream), #16a34a (Accent), #121417 (Charcoal)
+- Primary Fonts: Outfit (Headings), Inter (Body)
+
+# Capabilities
+- Generates `https://wa.me/` links.
+- Encodes messages using `text` parameter.
+- Supports appended UTM source/medium/campaign tags.
