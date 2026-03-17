@@ -134,7 +134,7 @@ const WhatsAppLinkGenerator = () => {
               </Badge>
             </div>
             <h1 className="font-heading text-4xl sm:text-6xl md:text-[5.5rem] font-extrabold leading-[1.0] tracking-[-0.04em] uppercase">
-              WhatsApp <span className="text-accent underline decoration-accent/20 underline-offset-8">Link</span> Generator
+              WhatsApp <span className="text-accent underline decoration-accent/20 underline-offset-8">Marketing</span> Link Engine
             </h1>
             <p className="text-base sm:text-[1.125rem] leading-[1.7] text-muted max-w-2xl mx-auto px-4">
               Create, track, and brand your WhatsApp direct chat links. The ultimate tool for Social Masla marketers.
