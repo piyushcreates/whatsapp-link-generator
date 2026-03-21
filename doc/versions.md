@@ -30,6 +30,15 @@
 - Simplified **Footer** to keep only the "Powered by Social Masla" branding and fixed background layout issues.
 - Applied **Extreme UI Compression**: Reduced typography, padding, and component heights to ensure the entire dashboard fits in a single desktop viewport without scrolling.
 
+## [1.3.1] - 2026-03-22
+### Changed
+- Removed "Professional Link Engine" badge for a cleaner UI.
+- Removed the high-level feature grid below the title to declutter the interface.
+- Updated main copy to: "The ultimate tool for marketers."
+- Fixed flex-box alignment between the Country Code Picker and Phone Number input box to ensure perfectly equal heights.
+- Applied a sticky footer layout (`flex-col`, `flex-1`, `mt-auto`) to ensure the page ends with the black footer and prevents the cream background from showing underneath.
+- Updated footer attribution to "Grow your business on WhatsApp with Pulse by Social Masla" linking to `socialmasla.com/pulse`.
+
 ## [1.3.0] - 2026-03-17
 ### Added
 - **Smart Country Code Picker**: Searchable dropdown with global codes.

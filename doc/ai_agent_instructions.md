@@ -40,3 +40,4 @@ You are an AI assistant helping with the development of the WhatsApp Link Genera
   - Section Padding: `140px` (Desktop)
   - Card Border Radius: `20px`
   - Button Border Radius: `8px`
+  - Input Box Heights: `h-12` (48px) for consistency across forms.

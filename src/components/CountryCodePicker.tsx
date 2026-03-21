@@ -273,7 +273,7 @@ export function CountryCodePicker({ value, onSelect }: CountryCodePickerProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[120px] sm:w-[140px] justify-between h-14 bg-white/50 border-input rounded-[8px] font-medium text-lg px-4"
+          className="w-[120px] sm:w-[140px] justify-between h-full bg-white/50 border-input rounded-[8px] font-medium text-base px-4"
         >
           {value ? `+${value}` : "Code"}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />

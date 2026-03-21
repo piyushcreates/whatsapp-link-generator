@@ -4,11 +4,14 @@ This application allows users to quickly generate direct WhatsApp chat links (`w
 
 ## Features
 
-- **Phone Number Input:** Easily input the recipient's phone number (including the country code).
-- **Pre-filled Message:** Optionally add a message that will automatically appear in the chat window.
-- **Link Generation:** Instantly generates the direct chat link.
-- **Copy Functionality:** One-click button to copy the generated link to the clipboard.
-- **Direct Open:** Button to immediately open the chat in WhatsApp (or WhatsApp Web).
+- **Smart Country Code Picker:** Searchable dropdown with global country codes.
+- **Phone Number Input:** Easily input the recipient's phone number.
+- **Pre-filled Message:** Optionally add a message with Quick Templates support.
+- **Link Generation:** Instantly generates the direct `wa.me` chat link.
+- **QR Code Engine:** Instant brand-ready QR codes with fast download support.
+- **Live Preview:** Visual WhatsApp chat bubble mockup for real-time validation.
+- **Link History:** LocalStorage persistence for the latest generated links.
+- **UTM Tracking:** Integrated fields for ad campaign tracking.
 
 ## Getting Started
 

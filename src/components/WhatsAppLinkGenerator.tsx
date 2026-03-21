@@ -123,41 +123,20 @@ const WhatsAppLinkGenerator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent selection:text-white">
-      <div className="container mx-auto px-6 sm:px-10 py-6 sm:py-8 flex flex-col items-center">
+    <div className="min-h-screen flex flex-col bg-background font-body text-foreground selection:bg-accent selection:text-white">
+      <div className="flex-1 container mx-auto px-6 sm:px-10 py-6 sm:py-8 flex flex-col items-center">
         <div className="w-full max-w-[1340px] space-y-6 sm:space-y-8">
           {/* Header */}
           <div className="text-center space-y-3 sm:space-y-4 max-w-4xl mx-auto">
-            <div className="flex justify-center">
-              <Badge variant="outline" className="px-3 py-0.5 border-accent/30 text-accent font-bold tracking-widest uppercase text-[0.55rem]">
-                Professional Link Engine
-              </Badge>
-            </div>
+
             <h1 className="font-heading text-3xl sm:text-5xl md:text-[3.25rem] font-extrabold leading-[1.1] tracking-[-0.03em] uppercase">
               WhatsApp <span className="text-accent underline decoration-accent/20 underline-offset-4">Marketing</span> Link Engine
             </h1>
             <p className="text-sm sm:text-base leading-relaxed text-muted max-w-2xl mx-auto px-4">
-              Create, track, and brand your WhatsApp direct chat links. The ultimate tool for Social Masla marketers.
+              Create, track, and brand your WhatsApp direct chat links. The ultimate tool for marketers.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2 max-w-3xl mx-auto">
-              <div className="space-y-1">
-                <p className="text-[0.65rem] font-bold uppercase tracking-widest text-accent">Fast</p>
-                <p className="text-[0.8rem] text-muted leading-tight">Instant link generation</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-[0.65rem] font-bold uppercase tracking-widest text-accent">Global</p>
-                <p className="text-[0.8rem] text-muted leading-tight">200+ Country codes</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-[0.65rem] font-bold uppercase tracking-widest text-accent">Visual</p>
-                <p className="text-[0.8rem] text-muted leading-tight">Live chat preview</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-[0.65rem] font-bold uppercase tracking-widest text-accent">Branded</p>
-                <p className="text-[0.8rem] text-muted leading-tight">Custom QR codes</p>
-              </div>
-            </div>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr,400px] gap-8 items-start">
@@ -173,7 +152,7 @@ const WhatsAppLinkGenerator = () => {
                         Recipient Phone Number
                       </label>
                     </div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 h-12">
                       <CountryCodePicker value={countryCode} onSelect={setCountryCode} />
                       <Input
                         id="phone"
@@ -181,7 +160,7 @@ const WhatsAppLinkGenerator = () => {
                         placeholder="234 567 8900"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
-                        className="h-12 bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-base px-6 flex-1"
+                        className="bg-white/50 border-input rounded-[8px] focus-visible:ring-accent font-medium text-base px-6 flex-1 h-full"
                       />
                     </div>
                   </div>
@@ -308,17 +287,17 @@ const WhatsAppLinkGenerator = () => {
         </div>
       </div>
 
-      <footer className="bg-black py-8 px-6 mt-6">
+      <footer className="bg-black py-8 px-6 mt-auto">
         <div className="container mx-auto flex flex-col items-center justify-center max-w-[1340px] text-center">
           <p className="text-[0.75rem] sm:text-[0.875rem] font-medium tracking-wide">
-            <span className="text-white/40">Powered by </span>
+            <span className="text-white/40">Grow your business on WhatsApp with </span>
             <a
-              href="https://socialmasla.com"
+              href="https://socialmasla.com/pulse"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-accent transition-colors duration-200 font-semibold"
             >
-              Social Masla
+              Pulse by Social Masla
             </a>
           </p>
         </div>
